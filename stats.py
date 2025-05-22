@@ -25,23 +25,5 @@ def list_letters(dict1):
         letter_list.append(dict2)
     return letter_list
 
-def rem_labels(letter_list):
-    letters = {}
-    for dictionary in letter_list:
-        letter = None
-        count = None
-        for key in dictionary:
-            value = dictionary[key]
-            print(f"{key}, {value}")
-            if letter == None:
-                letter = value
-            elif count == None:
-                count = value
-            else:
-                print(letters, letter, count)
-                raise Exception
-        letters[letter] = count
-    return letters
-
 def sort_letters(dictionary):
     return dictionary["count"]
